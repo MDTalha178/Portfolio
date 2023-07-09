@@ -1,0 +1,325 @@
+@import url('./global.css');
+
+/* Navbar style using flex */
+
+header .navbar{
+    position: relative;
+    display: flex;
+    flex: wrap;
+    height: 70px;
+    width: 100%;
+    background-color:var( --navbar-background-color);
+    justify-content: center;
+    
+}
+
+header ul{
+    display: flex;
+    flex: wrap;
+   align-items: center;
+
+}
+
+header .navbar ul li{
+    display: flex;
+    flex: wrap;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+#intro-name{
+    position: absolute;
+    left:5rem;
+    top:1.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar:hover{
+    background-color:var(--navbar-background-color-onhover);
+}
+
+/* navbar style ends here */
+
+/* main into section style start from here */
+.main-intro{
+   display: flex; 
+   justify-content: space-evenly;
+   align-items: center;
+   height: 500px;
+   width: 100%;
+}
+
+.main-intro .intro{
+    font-size: 23px;
+}
+
+.main-intro img{
+    height:400px;
+    width: 400px;
+}
+
+#intro-title{
+    font-size:40px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.portfolio-button{
+    margin-top:1rem;
+    width: 125px;
+    height: 50px;
+    background-color: var(--portfolio-button-background-color);
+    border: 1px solid var(--portfolio-button-border);
+    border-radius:24px;
+    padding: 0.8rem 1.1rem;
+    color: white;
+}
+
+.portfolio-button:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* main intro style ends here */
+
+/* skills section style start here */
+.main-skills{
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    background-color: var(--navbar-background-color-onhover);
+}
+
+.skill-image img{
+    height:50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.outer-skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-1{
+   display: flex;
+   height: 150px;
+   width:400px;
+   padding:1.5rem;
+   margin-bottom: 1rem;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+   border-radius: 12px;
+}
+
+.skill-image{
+    padding-right:0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.1rem;
+}
+
+.skill-details{
+    padding-left: 0.5rem;
+}
+
+#skill-title{
+    padding-bottom: 1rem;
+    font-size:20px;
+    font-weight: bold;
+}
+.skills-container{
+    height:500px;
+    width: 100%;
+    display:flex;
+    margin-top:5rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+
+}
+
+.skill-1:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-skills h1{
+   position: absolute;
+   padding-top:2rem;
+}
+/* skills section style end here */
+
+/* about section style start from here */
+.main-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    margin-top: 7rem;
+    padding: 1rem;
+}
+.about-image img{
+    height: 400px;
+    width: 350px;
+    border-radius: 23px;
+}
+
+.main-title{
+    top:74rem;
+    position: absolute;
+    font-size:30px;
+    font-weight: bold;
+}
+/* about section ends here */
+
+/* projects section style start here */
+
+.main-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-section{
+   height: 500px;
+   width: 100%;
+}
+
+.main-projects img{
+    height:210px;
+    width: 210px;
+    border-radius:14%
+
+}
+.portfoli-projects{
+    display:flex;
+    justify-content:center;
+    border: 1px solid white;
+    border-radius:23px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    flex-wrap: wrap;
+}
+
+.tech-stack{
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.tech-heading{
+    font-size:23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tech-listing {
+    display: flex;
+}
+
+.tech-listing li{
+    background-color: var(--portfolio-button-background-color);
+    color: white;
+    border: 1px solid gray;
+    padding:0.5rem;
+    margin-left: 0.5rem;
+    border-radius:12px;
+    margin-top: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-wrap: wrap;
+}
+
+.description{
+    padding:0.5rem;
+    margin-left: 0.5rem;
+}
+
+.projects-heading{
+    text-align:center;
+    font-size:30px;
+    font-weight: bold;
+}
+.portfoli-projects:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* projects section style ends here */
+
+/* Contact form style start here */
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+}
+
+#contact-heading{
+    text-align: center;
+    font-size:30px;
+    font-weight: 400;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.name-input{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.name-input input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 40%;
+    padding: 1rem 0.3rem;
+    border-bottom: 0.5px solid gray;
+    margin-bottom:2rem
+}
+
+.bottom-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 70%;
+    padding: 1rem 0.3rem;
+    border-bottom: 0.5px solid gray;
+    margin-bottom:3rem;
+    margin-left: 5rem;
+}
+/* contact style ends here */
+
+/* footer style start here */
+.footer-head{
+    height: 250px;
+    width: 100%;
+    background-color:var(--navbar-background-color-onhover)
+}
+.main-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.address{
+    margin-top:2.5rem;
+    padding: 0.5rem;
+}
+
+.address address{
+    padding-bottom: 1rem;
+}
+
+.services{
+    margin-top:1rem;
+    padding: 1rem;
+}
+
+.services ul{
+    padding-top: 1rem;
+}
+
+.services ul li{
+    padding-bottom: 1rem;
+}
+
+.footer-text{
+    text-align: center;
+    margin-top:1rem;
+}
